@@ -1,0 +1,121 @@
+<html>
+
+<style>
+div.header{
+  top: 0;
+  position: fixed;
+  padding-left: 400px;}
+div.header1{
+  top:20;
+  position: fixed;
+  padding-left: 490px;
+}
+
+*{
+        margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	text-decoration:none;
+	font-family:montserrat;
+}
+
+body
+{
+background-image:url('https://img.freepik.com/free-vector/trading-background-with-graphic-illustration-blue-heart-rate-that-is-rising-upwards_159711-165.jpg?size=626&ext=jpg');
+background-position: center;
+font-family:sans-serif;
+background-size:cover;
+margin-top:40px;
+}
+
+.main input[type="text"],.main input[type="text"],.main input[type="text"],.main input[type="text"],.main input[type="text"],.main input[type="text"],.main input[type="text"]{
+	border:0;
+	background:none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #800080;
+	padding:15px 3px;
+	width:400px;
+	outline:none;
+	color:white;
+	border-radius:100px;
+	transition:0.25s;
+	font-size:20;
+	
+}
+.bor{
+border:0;
+	background:none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #800080;
+	padding:10px 3px;
+	width:500px;
+	outline:none;
+	color:white;
+	transition:0.25s;}
+.main input[type="text"]:focus,.main input[type="text"]:focus,.main input[type="text"]:focus,.main input[type="text"]:focus,.main input[type="text"]:focus,.main input[type="text"]:focus,.main input[type="text"]:focus{
+	width:280px;
+	border-color:#8e44ad;
+}
+.logbtn{
+	display:block;
+	width:35%;
+	height:50px;
+	border:none;
+	border-radius:24px;
+	background:linear-gradient(120deg,#3498db,#8e44ad,#3498db,#8e44ad);
+	background-size:200%;
+	color:#fff;
+	outline:none;
+	cursor:pointer;
+	transition:.5s;
+	font-size:25;
+}
+.logbtn:hover{
+	background-center;
+}
+
+input::placeholder{
+	color:#F5FFFA;
+}
+.bottom-text{
+	margin-top:60px;
+	text-align:center;
+	font-size:13px;
+
+}
+
+</style>
+<body>
+<div class="navbar">
+<a href="/predict" >Predict</a>
+<a href="/">Home</a>
+<br>
+</div>
+	<center><div><font color="Powderblue" font-family="sans-serif" size=8 ><b>Crude Oil Prediction</b></font></div></center>
+	
+	
+<br><br><br><br>
+	<form class="main" action="/login" method="post">
+		<br>
+		<font size=20><input type="text" name="year1" placeholder="Enter previous 10th day price"/></font>
+		<font size=20><input type="text" name="year2" placeholder="Enter previous 9th day price"/></font>
+		<font size=20><input type="text" name="year3" placeholder="Enter previous 8th day price"/></font>
+		<font size=20><input type="text" name="year4" placeholder="Enter previous 7th day price"/></font>
+		<font size=20><input type="text" name="year5" placeholder="Enter previous 6th day price"/></font>
+		<font size=20><input type="text" name="year6" placeholder="Enter previous 5th day price"/></font>
+		<font size=20><input type="text" name="year7" placeholder="Enter previous 4th day price"/></font>
+		<font size=20><input type="text" name="year8" placeholder="Enter previous 3th day price"/></font>
+		<font size=20><input type="text" name="year9" placeholder="Enter previous 2nd day price"/></font>
+		<font size=20><input type="text" name="year10" placeholder="Enter previous 1st day price"/></font>
+		<center><input type="submit" class="logbtn" value="Predict"></center>
+		<div class="bor"><b><font color="white" size=5>{{showcase}}</font></b</div>
+	</form>
+</div>
+</body>
+
+</html>
